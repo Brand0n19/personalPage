@@ -9,13 +9,14 @@
 html {
     font-size: 62.5%; 
     box-sizing: border-box;
+    scroll-snap-type: y mandatory;
  
 }
 
   
 body { 
     font-size: 16px;
-    background-image: linear-gradient(to top, var(--gray-light) 20%, var(--white)100%);
+    background-image: linear-gradient(to top, var(--gray-light) 5%, var(--white)100%);
 }
    
 *,  
@@ -134,6 +135,13 @@ h1,h2,h3{
         grid-template-columns: 1fr 1fr;
         column-gap: 1rem;
     }
+
+    .services,
+.navigation-main,
+.form{
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
+}
 
 
 
@@ -268,3 +276,4 @@ h1,h2,h3{
     text-align: center;
     padding: 3rem;
 }
+
